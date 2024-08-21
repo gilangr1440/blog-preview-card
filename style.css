@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+  --yellow-color: hsl(47, 88%, 63%);
+  --white-color: hsl(0, 0%, 100%);
+  --gray-color-500: hsl(0, 0%, 42%);
+  --gray-color-950: hsl(0, 0%, 7%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow-color);
+  font-family: "Figtree", sans-serif;
+}
+
+body .container .card {
+  width: 384px;
+  background-color: var(--white-color);
+  padding: 24px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  border: solid 1px var(--gray-color-950);
+  box-shadow: 8px 8px black;
+}
+
+.card .card-header {
+  margin-bottom: 24px;
+}
+
+.card .card-header .image-container {
+  width: 100%;
+  height: 200px;
+}
+
+.card .card-header .image-container .header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.card .card-body .badge {
+  padding: 4px 12px;
+  background-color: var(--yellow-color);
+  width: max-content;
+  border-radius: 4px;
+}
+
+.card .card-body .badge p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--gray-color-950);
+  height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-body .published-date {
+  color: var(--gray-color-950);
+  font-size: 14px;
+  font-weight: 600;
+  height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-body .card-title {
+  color: var(--gray-color-950);
+  font-size: 24px;
+  font-weight: 900;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.card .card-body .card-title:hover {
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+
+.card .card-body .card-content {
+  color: var(--gray-color-500);
+  font-size: 16px;
+  font-weight: 500;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+
+.card .card-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card .card-footer .profile-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.card .card-footer .profile-container .profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-footer .profile-name {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container .card {
+    width: 327px;
+  }
+
+  .card .card-body .badge p {
+    font-size: 12px;
+  }
+
+  .card .card-body .card-title {
+    font-size: 20px;
+  }
+
+  .card .card-body .published-date {
+    font-size: 12px;
+  }
+
+  .card .card-body .card-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
