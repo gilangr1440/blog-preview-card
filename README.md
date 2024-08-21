@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL here](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
+- Live Site URL: [URL here](https://gilangr1440.github.io/blog-preview-card/)
 
 ## My process
 
@@ -46,5 +46,5 @@ I learned how to create a box-shadow and make the element width fit the text.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/gilangr1440)
+- Frontend Mentor - [@gilangr1440](https://www.frontendmentor.io/profile/gilangr1440)
 - Instagram - [@gilangr1440](https://www.instagram.com/gilangr1440/)
